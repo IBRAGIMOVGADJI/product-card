@@ -2,6 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 13px;
+  line-height: 18px;
 }
 .title {  /* h1 */
   font-size: 70px;
@@ -19,15 +20,15 @@ body {
 .description,
 .compound {
   color: #515076;
-  font-size: 13px;
   line-height: 18px;
 }
 .color-background {
   background-color: #F7F7FA;
+  width: 340px;
 }
 .price {
   margin-top: 25px;
-  font-size: 30;
+  font-size: 20px;
 }
 .skill {
   color: #A5A3B9;
