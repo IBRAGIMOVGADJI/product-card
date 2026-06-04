@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color: #515076;
 }
 .title {  /* h1 */
   font-size: 70px;
@@ -10,7 +11,6 @@ body {
   line-height: 78px;
   margin: 0;
   text-align: center;
-  color: #515076;
 }
 .products-list {  /*ul*/
   list-style: none;
@@ -19,12 +19,15 @@ body {
 }
 .description,
 .compound {
+  font-size: 13px;
   color: #515076;
   line-height: 18px;
 }
-.color-background {
+.card {
   background-color: #F7F7FA;
   width: 340px;
+  padding: 25px;
+
 }
 .price {
   margin-top: 25px;
