@@ -24,7 +24,6 @@ body {
 }
 .compound {
   font-size: 13px;
-  color:#515076;
   line-height: 18px;
 }
 .card {
@@ -36,7 +35,4 @@ body {
 .price {
   margin-top: 25px;
   font-size: 20px;
-}
-.skill {
-  color: #A5A3B9;
 }
