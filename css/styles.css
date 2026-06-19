@@ -4,10 +4,19 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular.ttf') format('ttf');
+  src: url('/fonts/montserrat-regular.woff2') format('woff2'),
+       url('/fonts/montserrat-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap; /* чтобы текст не пропадал во время загрузки */
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-bold.woff2') format('woff2'),
+       url('/fonts/montserrat-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 body {
   font-family: Montserrat, Arial, sans-serif;
@@ -34,10 +43,9 @@ body {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  column-gap: 50px;
+  gap: 45px;
   justify-content: center;
-
+  max-width: 1110px;
 }
 .product-price {
   display: flex;
@@ -59,7 +67,6 @@ body {
   background-color: #F7F7FA;
   width: 340px;
   padding: 25px;
-  margin: 25px;
 }
 .price {
   font-size: 20px;
@@ -67,8 +74,6 @@ body {
 .sum {
   font-size: 20px;
   line-height: 24px;
-
-
 }
 .components-list {
   padding-inline-start: 15px;
