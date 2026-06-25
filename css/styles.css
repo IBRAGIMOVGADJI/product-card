@@ -1,0 +1,80 @@
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-regular.woff2') format('woff2'),
+       url('/fonts/montserrat-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* чтобы текст не пропадал во время загрузки */
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-bold.woff2') format('woff2'),
+       url('/fonts/montserrat-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+  background-image: url("/images/bg_1.png");
+  background-position-x: 85px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.title {  /* h1 */
+  padding-top: 220px;
+  padding-bottom: 110px;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  margin: 0;
+  text-align: center;
+}
+.products-list {  /*ul*/
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  max-width: 1110px;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.description {
+  text-transform: uppercase;
+  font-size: 12px;
+  color:#A5A3B9;
+  line-height: 24px;
+}
+.compound {
+  font-size: 13px;
+  line-height: 18px;
+}
+.card {
+  background-color: #F7F7FA;
+  width: 340px;
+  padding: 25px;
+}
+.price {
+  font-size: 20px;
+}
+.sum {
+  font-size: 20px;
+  line-height: 24px;
+}
+.components-list {
+  padding-inline-start: 15px;
+}
