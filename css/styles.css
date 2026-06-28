@@ -4,16 +4,16 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/montserrat-regular.woff2') format('woff2'),
-       url('/fonts/montserrat-regular.woff') format('woff');
+  src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+       url('../fonts/montserrat-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap; /* чтобы текст не пропадал во время загрузки */
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/montserrat-bold.woff2') format('woff2'),
-       url('/fonts/montserrat-bold.woff') format('woff');
+  src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+       url('../fonts/montserrat-bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -23,11 +23,17 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #515076;
-  background-image: url("/images/bg_1.png");
-  background-position-x: 85px;
-  background-repeat: no-repeat;
-  background-size: 50%;
 }
+
+.background {
+    background-image: url("../images/bg_1.png");
+    background-repeat: no-repeat;
+    background-position: 0px -20px;
+    background-size: 790px 697px;
+    max-width: 1110px;
+    margin: auto;
+}
+
 .title {  /* h1 */
   padding-top: 220px;
   padding-bottom: 110px;
@@ -47,34 +53,53 @@ body {
   justify-content: center;
   max-width: 1110px;
 }
+.card {
+  background-color: #F7F7FA;
+  width: 340px;
+  padding: 25px;
+}
+.card__category{
+  text-transform: uppercase;
+  font-size: 12px;
+  color:#A5A3B9;
+  line-height: 24px;
+}
+.card__name{
+  font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.card__description{
+   margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.compound {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.compound-list{
+  padding-inline-start: 0;
+  list-style-type: none;
+  margin-top: 5px;
+
+}
+
 .product-price {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
   margin-top: 25px;
 }
-.description {
-  text-transform: uppercase;
-  font-size: 12px;
-  color:#A5A3B9;
-  line-height: 24px;
-}
-.compound {
-  font-size: 13px;
-  line-height: 18px;
-}
-.card {
-  background-color: #F7F7FA;
-  width: 340px;
-  padding: 25px;
-}
-.price {
+
+.product-price__cost {
   font-size: 20px;
 }
-.sum {
+.product-price__sum {
   font-size: 20px;
   line-height: 24px;
-}
-.components-list {
-  padding-inline-start: 15px;
 }
