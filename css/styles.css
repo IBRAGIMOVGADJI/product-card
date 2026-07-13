@@ -103,3 +103,9 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+#change-and-return-color {
+  background-color: #3498db;
+}
+#change-and-return-color.active {
+  background-color: #e74c3c;
+}
