@@ -1,4 +1,4 @@
-function logTempCity (cityName, cityTemp)  {
+function logTempCity(cityName, cityTemp) {
   console.log(`Сейчас в ${cityName} температура — ${cityTemp} градусов по Цельсию`);
 }
 logTempCity("Дербент", 30);
@@ -19,13 +19,13 @@ let product = 'RobotCleaner';
 let price = 10000;
 function buyProduct(budget) {
   if (budget >= price) {
-  console.log('Робот-пылесос приобретён. Спасибо за покупку!');
+  console.log(product, 'приобретён. Спасибо за покупку!');
   } else {
 const SHORTAGE = price - budget;
   console.log(`Вам не хватает ${SHORTAGE} рублей, пополните баланс`);
   }
 }
-buyProduct(3000);
+buyProduct(10000);
 
 function sayHello(name) {
   console.log(`Привет, ${name}!`);
