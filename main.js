@@ -7,11 +7,11 @@ const blueColorHash = '#0000ff';
 
 changeFirstColorButton.addEventListener('click', () => {
   productCard.style.backgroundColor = greenColorHash;
-})
+});
 
 changeColorAllButton.addEventListener('click', () =>{
   productCards.forEach((card) => card.style.backgroundColor = blueColorHash);
-})
+});
 
 const openGoogleButton = document.querySelector('#open-google');
 openGoogleButton.addEventListener('click', openGoogle);
@@ -19,7 +19,7 @@ openGoogleButton.addEventListener('click', openGoogle);
 function openGoogle() {
   const question = confirm('Вы дейстительно хотите открыть Google?');
   if (question === true) {
-    window.open('https://www.google.com')
+    window.open('https://www.google.com');
   } else {
     return;
   }
@@ -34,7 +34,7 @@ function outputConsoleLog(message) {
 const heading = document.querySelector('.title');
 heading.addEventListener('mouseover', () => {
   console.log(heading.textContent);
-})
+});
 
 const chBackgroundButton = document.getElementById('change-and-return-color');
 chBackgroundButton.addEventListener('click', () => {
